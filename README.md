@@ -1,7 +1,9 @@
 # CEHv13-Tools
-## Cooming Soon !!!
 ...
-## Model 01
+## CEHv13 Lab Prerequisites
 
-## Model 02
+## CEHv13 Module 02 Footprinting and Reconnaissance
+
+## CEHv13 Module 03 Scanning Networks
+
 
