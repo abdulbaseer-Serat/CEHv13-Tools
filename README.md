@@ -91,8 +91,7 @@ NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
 
 ## 1. VirtualBox NAT Network Configuration
 
-<img width="562" height="329" alt="image" src="https://github.com/user-attachments/assets/d1bc05e0-c6bf-4fb7-8dd9-3fbc3879c110" />
-
+<img width="959" height="507" alt="image" src="https://github.com/user-attachments/assets/766c5102-dda4-4003-8f2e-e1abc58cce7b" />
 
 **Description**
 
