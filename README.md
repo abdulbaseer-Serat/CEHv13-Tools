@@ -8,11 +8,16 @@ Building an isolated environment for Ethical Hacking, Network Analysis, Security
 
 <br>
 
-![Cybersecurity](https://img/Cybersecurity-Lab-red?style=for-the-badge
-![VirtualBox](https://img.shields.io/badge/VirtualBox-7.2-blue?style=for-the-badge&logo=virtualwhite
-![Kali Linux](https://img.shields.io/ux-2026.2-purple?style=for-the-badge&logo=kalilinux&logoColor=white
-![Linux](https://imgio/badge/Linux-Networking-orange?style=for-the-badge&logo=linux&logoColor=white
-![Virtualization](https://img.shields.io/badge/bled-green?style=for-the-badge
+<p align="center">
+
+https://img.shields.io/badge/Cybersecurity-Lab-red?style=for-the-badge
+https://img.shields.io/badge/VirtualBox-7.2-blue?style=for-the-badge&logo=virtualbox&logoColor=white
+<img src="https://img.shields.io/_Linux-2026.2-purple?style=for-the-badge&logo=kalilinux&logoColor=white
+<img src="https://img.shields.io/x-Networking-orange?style=for-the-badge&logo=linux&logoColor=white
+<img src="https://img.shields.io/badgerk-10.0.0.0%2F24-teal?style=for-the-badge
+<img src="https://imgo/badge/Status-Completed-success?style=for-the-badge
+
+</p>
 
 </div>
 
