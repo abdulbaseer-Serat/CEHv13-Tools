@@ -199,7 +199,9 @@ I switched to the main administrator account on the laptop, opened VirtualBox, a
 
 ## 9. Security and Ethical Use
 
-This laboratory is intended for **educational purposes and authorized security testing only**.
+This cybersecurity laboratory was developed exclusively for educational purposes, authorized security training, and ethical hacking practice. All testing should be performed only on systems that you own or have explicit written authorization to assess.
+
+Unauthorized testing against public or private systems is illegal and unethical.
 
 ---
 
@@ -217,26 +219,6 @@ This laboratory is intended for **educational purposes and authorized security t
 The virtual cybersecurity laboratory was successfully configured using VirtualBox and Kali Linux. The environment provides a controlled foundation for future cybersecurity and penetration-testing exercises.
 
 ---
-
-## 🎯 Skills Learned
-
-- VirtualBox Administration
-- Virtual Networking
-- NAT Network Configuration
-- Linux Networking
-- Static IPv4 Addressing
-- DNS Configuration
-- VM Snapshot Management
-- Cybersecurity Lab Design
-- Troubleshooting Network Connectivity
-
----
-
-## 🔒 Ethical Use Notice
-
-This cybersecurity laboratory was developed exclusively for educational purposes, authorized security training, and ethical hacking practice. All testing should be performed only on systems that you own or have explicit written authorization to assess.
-
-Unauthorized testing against public or private systems is illegal and unethical.
 
 ---
 
