@@ -9,13 +9,13 @@ Building an isolated environment for Ethical Hacking, Network Analysis, Security
 <br>
 
 <p align="center">
-
-https://img.shields.io/badge/Cybersecurity-Lab-red?style=for-the-badge
-https://img.shields.io/badge/VirtualBox-7.2-blue?style=for-the-badge&logo=virtualbox&logoColor=white
-<img src="https://img.shields.io/_Linux-2026.2-purple?style=for-the-badge&logo=kalilinux&logoColor=white
-<img src="https://img.shields.io/x-Networking-orange?style=for-the-badge&logo=linux&logoColor=white
-<img src="https://img.shields.io/badgerk-10.0.0.0%2F24-teal?style=for-the-badge
-<img src="https://imgo/badge/Status-Completed-success?style=for-the-badge
+![Cybersecurity](https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000)
+![VirtualBox](https://img.shields.io/badge/Ver-VirtualBox%207.2-0070C0?style=flat-square&labelColor=000000)
+![Kali Linux](https://img.shields.io/badge/Kali%20Linux-v2026.2-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white)
+![Linux](https://img.shields.io/badge/Skill-Linux-404040?style=flat-square&labelColor=C00000)
+![Network](https://img.shields.io/badge/Network-10.0.0.0%2F24-238F89?style=flat-square&labelColor=000000)
+![Penetration Testing](https://img.shields.io/badge/Penetration%20Testing-C000000?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white)
+![Virtualization](https://img.shields.io/badge/Skill-Virtualization-404040?style=flat-square&labelColor=C00000)
 
 </p>
 
