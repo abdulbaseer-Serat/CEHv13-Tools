@@ -59,10 +59,10 @@ The isolated environment helps to:
                         │
                 Gateway 10.0.0.1
                         │
-         ┌──────────────────────────┐
-         │  VirtualBox NAT Network  │
-         │      10.0.0.0/24         │
-         └──────────────────────────┘
+           ┌──────────────────────────┐
+           │  VirtualBox NAT Network  │
+           │      10.0.0.0/24         │
+           └──────────────────────────┘
                         │
                         │
                Kali Linux VM
@@ -97,8 +97,6 @@ NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
 
 ### 1. VirtualBox NAT Network Configuration
 
-**Description**
-
 Created a custom VirtualBox NAT Network using:
 
 <img width="1919" height="1014" alt="nat-network" src="https://github.com/user-attachments/assets/6379d18f-2edc-4da2-8098-a8c3a953d679" />
@@ -115,8 +113,6 @@ This allows virtual machines to communicate with each other while maintaining in
 
 screenshots/kali-network-adapter.png
 
-**Description**
-
 Configured Adapter 1 to attach directly to the custom NAT Network.
 
 ---
@@ -124,8 +120,6 @@ Configured Adapter 1 to attach directly to the custom NAT Network.
 ### 3. Kali Linux Desktop
 
 screenshots/kali-desktop.png
-
-**Description**
 
 Successful boot of Kali Linux virtual machine.
 
@@ -146,9 +140,6 @@ Expected Output:
 ```text
 10.0.0.2/24
 ```
-
-✅ PASSED
-
 ---
 
 ## 5. Gateway Connectivity Test
@@ -166,8 +157,6 @@ Result:
 ```text
 Successful replies received
 ```
-
-✅ PASSED
 
 ---
 
