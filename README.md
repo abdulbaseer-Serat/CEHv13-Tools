@@ -1,8 +1,5 @@
-# 🔐 NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
 
-<div align="center">
-
-### 🛡️ Secure Virtual Cybersecurity Laboratory
+# 🛡️ Secure Virtual Cybersecurity Laboratory
 
 > A secure and isolated cybersecurity laboratory built using Oracle VirtualBox and Kali Linux for ethical hacking, network analysis, penetration testing, and cybersecurity training.
 
