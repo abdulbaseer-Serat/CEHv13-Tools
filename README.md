@@ -188,7 +188,7 @@ DNS resolution successful
 
 # ⚠️ Troubleshooting
 
-## Issue 1: No Internet Access
+## Issue: No Internet Access
 
 ### Symptoms
 
@@ -208,28 +208,6 @@ sudo nmcli connection up "Wired connection 1"
 ```
 
 ---
-
-## Issue 2: VirtualBox VM Won't Start
-
-### Cause
-
-Hardware virtualization disabled.
-
-### Solution
-
-Enable:
-
-```text
-Intel VT-x
-```
-
-or
-
-```text
-AMD-V
-```
-
-from BIOS/UEFI settings.
 
 ---
 
