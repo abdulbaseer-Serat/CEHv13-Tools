@@ -93,13 +93,21 @@ The laboratory is built on a custom **NAT Network (10.0.0.0/24)** and serves as 
 
 <p align="center">
 
-https://img.shields.io/badge/Oracle_VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white
+![Oracle VirtualBox](https://img.shields.io/badge/Oracle_VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white)
 
-https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
 
-https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-https://img.shields.io/badge/Networking-008080?style=for-the-badge
+![Networking](https://img.shields.io/badge/Networking-008080?style=for-the-badge)
+
+https://img.shields.io/badge/Cybersecurity-Lab-red?style=for-the-badge
+
+![NAT Network](https://img.shields.io/badge/NAT_Networkteal?style=for-the-badge
+
+![Virtualmg.shields.io/badge/Virtualization-Enabled-green?style=for-the-badge
+
+![Status](https://img.shields.io/badge/Status-brightgreen?style=for-the-badge
 
 </p>
 
