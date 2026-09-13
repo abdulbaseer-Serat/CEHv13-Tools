@@ -1,4 +1,4 @@
-# NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
+# 🛡️ Secure Virtual Cybersecurity Laboratory
 
 > A secure and isolated cybersecurity laboratory built using Oracle VirtualBox and Kali Linux for ethical hacking, network analysis, penetration testing, and cybersecurity training.
 
@@ -20,48 +20,60 @@ with Kali Linux configured as the primary security workstation.
 
 ---
 
-# 🖥️ Lab Specifications
-
-## Host Machine
-
-| Component | Details |
-|------------|-----------|
-| Operating System | Windows 11 |
-| Processor | Intel Core i7-13620H |
-| Virtualization Platform | Oracle VM VirtualBox |
-| Storage | SSD |
-| Memory | 16GB+ RAM |
-
-## Kali Linux VM
-
-| Configuration | Value |
-|--------------|---------|
-| OS | Kali Linux |
-| Network Type | NAT Network |
-| Static IP | 10.0.0.2 |
-| Subnet Mask | 255.255.255.0 |
-| Gateway | 10.0.0.1 |
-| DNS Server | 8.8.8.8 |
+---
+## 🎯 Project Objectives
+✅ Install Oracle VirtualBox
+✅ Deploy Kali Linux Virtual Machine
+✅ Create a Private NAT Network
+✅ Configure Static IPv4 Addressing
+✅ Enable Internet Connectivity
+✅ Configure DNS Resolution
+✅ Verify Gateway Reachability
+✅ Enable Shared Clipboard & Shared Folders
+✅ Create Baseline VM Snapshots
+✅ Build Foundation for Future Cybersecurity Labs
 
 ---
 
-# 🌐 Network Architecture
+# 🏗️ Lab Architecture
 
 ```text
-                    INTERNET
-                        │
-                        │
-                Gateway 10.0.0.1
-                        │
-         ┌──────────────────────────┐
-         │  VirtualBox NAT Network  │
-         │      10.0.0.0/24         │
-         └──────────────────────────┘
-                        │
-                        │
-               Kali Linux VM
-                  10.0.0.2
+INTERNET
+│
+│
+Gateway 10.0.0.1
+│
+┌──────────────────────────────────┐
+│ VirtualBox NAT Network │
+│ 10.0.0.0/24 │
+└──────────────────────────────────┘
+│
+│
+┌────────────────────┐
+│ Kali Linux │
+│ 10.0.0.2 │
+└────────────────────┘
 ```
+
+---
+# ⚙️ Lab Configuration
+| Component | Configuration |
+|------------|---------------|
+| 🖥️ Host OS | Windows 11 |
+| 💻 CPU | Intel Core i5-1135G7 |
+| 🧠 RAM | 8 GB |
+| 📦 Hypervisor | Oracle VirtualBox 7.2.16 |
+| 🐧 Guest OS | Kali Linux 2026.2 |
+| 🌐 Network Type | NAT Network |
+| 📡 Network Range | 10.0.0.0/24 |
+| 🛜 Kali IP | 10.0.0.2 |
+| 🚪 Gateway | 10.0.0.1 |
+| 🌍 DNS | 8.8.8.8 |
+| 📁 Shared Folder | Downloads |
+| 📋 Shared Clipboard | Bidirectional |
+| 🔄 Drag & Drop | Bidirectional |
+
+---
 
 ---
 
