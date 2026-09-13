@@ -1,5 +1,4 @@
-
-# 🛡️ Secure Virtual Cybersecurity Laboratory
+# NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
 
 > A secure and isolated cybersecurity laboratory built using Oracle VirtualBox and Kali Linux for ethical hacking, network analysis, penetration testing, and cybersecurity training.
 
@@ -7,11 +6,9 @@
 
 # 📖 Project Overview
 
-This project documents the design and deployment of a **Cybersecurity Lab Environment** using **Oracle VirtualBox** and **Kali Linux**, completed as part of the **Networkwalks Cybersecurity Program (Batch B083)**.
+This project documents the setup of a cybersecurity testing lab environment using Oracle VirtualBox and Kali Linux as part of the Networkwalks Cybersecurity Program (Batch B083).
 
-The objective was to establish a secure and isolated laboratory where cybersecurity tools and techniques can be practiced safely without impacting the host operating system or external networks.
-
-The laboratory is built on a custom **NAT Network (10.0.0.0/24)** and serves as the foundation for future penetration testing, digital forensics, network analysis, and ethical hacking exercises.
+The objective was to build a safe and isolated virtual environment where cybersecurity tools and techniques can be practiced without affecting the host operating system or external networks.
 
 The lab uses a custom VirtualBox NAT Network configured with the subnet:
 
@@ -23,17 +20,28 @@ with Kali Linux configured as the primary security workstation.
 
 ---
 
-## 🎯 Project Objectives
-✅ Install Oracle VirtualBox
-✅ Deploy Kali Linux Virtual Machine
-✅ Create a Private NAT Network
-✅ Configure Static IPv4 Addressing
-✅ Enable Internet Connectivity
-✅ Configure DNS Resolution
-✅ Verify Gateway Reachability
-✅ Enable Shared Clipboard & Shared Folders
-✅ Create Baseline VM Snapshots
-✅ Build Foundation for Future Cybersecurity Labs
+# 🖥️ Lab Specifications
+
+## Host Machine
+
+| Component | Details |
+|------------|-----------|
+| Operating System | Windows 11 |
+| Processor | Intel Core i7-13620H |
+| Virtualization Platform | Oracle VM VirtualBox |
+| Storage | SSD |
+| Memory | 16GB+ RAM |
+
+## Kali Linux VM
+
+| Configuration | Value |
+|--------------|---------|
+| OS | Kali Linux |
+| Network Type | NAT Network |
+| Static IP | 10.0.0.2 |
+| Subnet Mask | 255.255.255.0 |
+| Gateway | 10.0.0.1 |
+| DNS Server | 8.8.8.8 |
 
 ---
 
