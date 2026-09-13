@@ -43,28 +43,25 @@ with Kali Linux configured as the primary security workstation.
 
 ---
 
-# 🖥️ Lab Specifications
+---
+# ⚙️ Lab Configuration
+| Component | Configuration |
+|------------|---------------|
+| 🖥️ Host OS | Windows 11 |
+| 💻 CPU | Intel Core i5-1135G7 |
+| 🧠 RAM | 8 GB |
+| 📦 Hypervisor | Oracle VirtualBox 7.2.16 |
+| 🐧 Guest OS | Kali Linux 2026.2 |
+| 🌐 Network Type | NAT Network |
+| 📡 Network Range | 10.0.0.0/24 |
+| 🛜 Kali IP | 10.0.0.2 |
+| 🚪 Gateway | 10.0.0.1 |
+| 🌍 DNS | 8.8.8.8 |
+| 📁 Shared Folder | Downloads |
+| 📋 Shared Clipboard | Bidirectional |
+| 🔄 Drag & Drop | Bidirectional |
 
-## Host Machine
-
-| Component | Details |
-|------------|-----------|
-| Operating System | Windows 11 |
-| Processor | Intel Core i7-13620H |
-| Virtualization Platform | Oracle VM VirtualBox |
-| Storage | SSD |
-| Memory | 16GB+ RAM |
-
-## Kali Linux VM
-
-| Configuration | Value |
-|--------------|---------|
-| OS | Kali Linux |
-| Network Type | NAT Network |
-| Static IP | 10.0.0.2 |
-| Subnet Mask | 255.255.255.0 |
-| Gateway | 10.0.0.1 |
-| DNS Server | 8.8.8.8 |
+---
 
 ---
 
