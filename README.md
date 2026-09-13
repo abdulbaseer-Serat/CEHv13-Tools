@@ -1,4 +1,4 @@
-# NETWORKWALKS - B083 WK1 PM1 CYBERSECURITY - LAB SETUP
+# Cybersecurity Lab Environment Setup
 
 > A secure and isolated cybersecurity laboratory built using Oracle VirtualBox and Kali Linux for ethical hacking, network analysis, penetration testing, and cybersecurity training.
 
