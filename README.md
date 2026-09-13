@@ -89,27 +89,24 @@ The laboratory is built on a custom **NAT Network (10.0.0.0/24)** and serves as 
 
 ---
 
-# 🧰 Technologies Used
+## Installation Steps
 
-<p align="center">
+**Step 1.** Download & install 7-Zip:  
+🔗 https://7-zip.org/download.html
 
-![Oracle VirtualBox](https://img.shields.io/badge/Oracle_VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white)
+**Step 2.** Download & install VirtualBox on your laptop/PC:  
+🔗 https://virtualbox.org/wiki/Downloads
 
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
+**Step 3.** Configure the network settings on VirtualBox (Create NAT Network in `10.0.0.0/24`)
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+**Step 4.** Download & import Kali Linux Virtual Machine into VirtualBox:  
+🔗 https://kali.org/get-kali
 
-![Networking](https://img.shields.io/badge/Networking-008080?style=for-the-badge)
+**Step 5.** Configure the IP settings of Kali Linux.
 
-https://img.shields.io/badge/Cybersecurity-Lab-red?style=for-the-badge
+**Step 6.** Create a VM Snapshot.
 
-![NAT Network](https://img.shields.io/badge/NAT_Networkteal?style=for-the-badge
-
-![Virtualmg.shields.io/badge/Virtualization-Enabled-green?style=for-the-badge
-
-![Status](https://img.shields.io/badge/Status-brightgreen?style=for-the-badge
-
-</p>
+**Step 7.** Verify connectivity and internet access.
 
 ---
 
