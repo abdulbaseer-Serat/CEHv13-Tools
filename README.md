@@ -93,218 +93,128 @@ NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
 
 ---
 
-## 📸 Lab Screenshots
+## 4. Lab Architecture
 
-### 1. VirtualBox NAT Network Configuration
+![Lab Architecture]
 
-Created a custom VirtualBox NAT Network using:
+The Kali Linux VM is connected to a private NAT Network. Additional target machines can be added to the same network for future authorized security testing.
 
-<img width="1919" height="1014" alt="nat-network" src="https://github.com/user-attachments/assets/6379d18f-2edc-4da2-8098-a8c3a953d679" />
+---
+
+## 5. Setup Procedure
+
+### Step 1: Install 7-Zip
+
+7-Zip was installed to extract the Kali Linux virtual-machine files.
+
+### Step 2: Install VirtualBox
+
+Oracle VirtualBox was installed and configured as the virtualization platform.
+
+### Step 3: Create NAT Network
+
+A private NAT Network named **NatNetwork** was created.
+
+**Configuration:**
 
 ```text
-10.0.0.0/24
+Network: 10.0.0.0/24
+DHCP: Enabled
+IPv6: Disabled
 ```
 
-This allows virtual machines to communicate with each other while maintaining internet access.
+![NAT Network Configuration]
 
----
+### Step 4: Import Kali Linux
 
-### 2. Kali Linux Network Adapter
-
-screenshots/kali-network-adapter.png
-
-Configured Adapter 1 to attach directly to the custom NAT Network.
-
----
-
-### 3. Kali Linux Desktop
-
-screenshots/kali-desktop.png
-
-Successful boot of Kali Linux virtual machine.
-
----
-
-### 4. IP Address Verification
-
-screenshots/ip-address-verification.png
-
-Command:
-
-```bash
-ip a
-```
-
-Expected Output:
+The Kali Linux VM was imported into VirtualBox and configured with:
 
 ```text
-10.0.0.2/24
-```
----
-
-### 5. Gateway Connectivity Test
-
-screenshots/gateway-ping.png
-
-Command:
-
-```bash
-ping -c 4 10.0.0.1
+Adapter: NAT Network
+Network: NatNetwork
+RAM: 2048 MB
 ```
 
-Result:
+![Kali Linux VM]
+
+A shared folder was also configured for file transfer between the host and Kali VM.
+
+### Step 5: Configure Network
+
+Kali Linux was configured with a consistent IPv4 address:
 
 ```text
-Successful replies received
+IP Address: 10.0.0.2
+Subnet Mask: 255.255.255.0
+Gateway: 10.0.0.1
+DNS: 8.8.8.8
 ```
+
+![Kali Network Configuration]
+
+### Step 6: Create Snapshot
+
+After completing the initial configuration, a clean snapshot named **Clean Kali - Network Setup** was created as a recovery point for future experiments.
 
 ---
 
-### 6. Internet Connectivity Test
+## 6. Lab Verification
 
-screenshots/internet-ping.png
+The following commands were used to verify the setup:
 
-Command:
+| Test          | Command                     | Expected Result      |
+| ------------- | --------------------------- | -------------------- |
+| Check IP      | `ip a`                      | Correct IP displayed |
+| Test Gateway  | `ping 10.0.0.1`             | Successful replies   |
+| Test Internet | `ping 8.8.8.8`              | Successful replies   |
+| Test DNS      | `nslookup networkwalks.com` | Domain resolves      |
+| Check Nmap    | `nmap --version`            | Version displayed    |
 
-```bash
-ping -c 4 8.8.8.8
-```
-
-Result:
-
-```text
-External internet access confirmed
-```
-
----
-
-### 7. DNS Resolution Test
-
-screenshots/dns-resolution.png
-
-Command:
-
-```bash
-nslookup google.com
-```
-
-Result:
-
-```text
-DNS resolution successful
-```
+**Configured IP:** `10.0.0.2/24`
+**Gateway:** `10.0.0.1`
+**DNS:** `8.8.8.8`
 
 ---
 
-## 🚀 Implementation Steps
+## 7. Problem Encountered
 
-### Step 1 – Install VirtualBox
+### VirtualBox "Can't Open Machine" Error
 
-Downloaded and installed Oracle VM VirtualBox.
+After extracting the Kali Linux files, VirtualBox displayed a **"Can't Open Machine"** error when I tried to add the VM.
 
-Official Website: https://www.virtualbox.org
-
-```
-
-```
----
-
-### Step 2 – Import Kali Linux
-
-Downloaded the official Kali Linux VirtualBox image and imported it into VirtualBox.
-
-Official Website: https://www.kali.org/get-kali/
-
+**Solution:**
+I switched to the main administrator account on the laptop, opened VirtualBox, and added the extracted Kali VM again. The VM then opened successfully.
 
 ---
 
----
+## 8. What I Learned
 
-### Step 3 – Configure Static IP
-
-Kali Linux Network Configuration:
-
-```text
-IP Address  : 10.0.0.2
-Subnet Mask : 255.255.255.0
-Gateway     : 10.0.0.1
-DNS         : 8.8.8.8
-```
+* The difference between **NAT and NAT Network**.
+* How virtual machines communicate through virtual networks.
+* How to configure IPv4, gateway, and DNS settings in Kali Linux.
+* How to create and use VirtualBox snapshots.
+* The importance of documenting cybersecurity lab configurations and troubleshooting steps.
 
 ---
 
-### Step 4 – Create Snapshot
+## 9. Security and Ethical Use
 
-Created a clean recovery snapshot named:
-
-```text
-Clean Kali Baseline
-```
-
-This allows quick rollback after installing tools or performing testing activities.
+This laboratory is intended for **educational purposes and authorized security testing only**.
 
 ---
 
-## ✅ Verification Tests
+## 10. Tools Used
 
-### Interface Verification
-
-```bash
-ip a
-```
-
-Result:
-
-```text
-10.0.0.2/24 assigned
-```
+* 7-Zip
+* Oracle VirtualBox
+* Kali Linux
+  
 
 ---
 
-### Gateway Reachability
+## 11. Conclusion
 
-```bash
-ping -c 4 10.0.0.1
-```
-
----
-
-### Internet Access Verification
-
-```bash
-ping -c 4 8.8.8.8
-```
-
----
-
-### DNS Resolution
-
-```bash
-nslookup google.com
-```
-
----
-
-## ⚠️ Troubleshooting
-
-## Issue 1: No Internet Access
-
-### Symptoms
-
-- Ping to internet fails
-- DNS not resolving
-
-### Solution
-
-Run:
-
-```bash
-sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
-
-sudo nmcli connection down "Wired connection 1"
-
-sudo nmcli connection up "Wired connection 1"
-```
+The virtual cybersecurity laboratory was successfully configured using VirtualBox and Kali Linux. The environment provides a controlled foundation for future cybersecurity and penetration-testing exercises.
 
 ---
 
