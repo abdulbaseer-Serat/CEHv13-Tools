@@ -19,45 +19,37 @@ The lab uses a custom VirtualBox NAT Network configured with the subnet:
 with Kali Linux configured as the primary security workstation.
 
 ---
-## 🎯 Project Objectives
+## 🎯 Objective
 
-✅ Install Oracle VirtualBox
+The objective of this Week 1 lab was to build and configure a **controlled cybersecurity environment** using Kali Linux and Oracle VirtualBox.
 
-✅ Deploy Kali Linux Virtual Machine
+The lab focused on:
 
-✅ Create a Private NAT Network
+- 🔐 Cybersecurity fundamentals
+- 🌐 Basic networking
+- 🐉 Kali Linux environment setup
+- 📡 IP configuration
+- 🧪 Network connectivity testing
+- 💾 VM snapshot and recovery
 
-✅ Configure Static IPv4 Addressing
-
-✅ Enable Internet Connectivity
-
-✅ Configure DNS Resolution
-
-✅ Verify Gateway Reachability
-
-✅ Enable Shared Clipboard & Shared Folders
-
-✅ Create Baseline VM Snapshots
-
-✅ Build Foundation for Future Cybersecurity Labs
+The environment provides a safe and controlled space for performing authorized cybersecurity experiments.
 
 ---
-## ⚙️ Lab Configuration
-| Component | Configuration |
-|------------|---------------|
-| 🖥️ Host OS | Windows 11 |
-| 💻 CPU | Intel Core i5-1135G7 |
-| 🧠 RAM | 8 GB |
-| 📦 Hypervisor | Oracle VirtualBox 7.2.16 |
-| 🐧 Guest OS | Kali Linux 2026.2 |
-| 🌐 Network Type | NAT Network |
-| 📡 Network Range | 10.0.0.0/24 |
-| 🛜 Kali IP | 10.0.0.2 |
-| 🚪 Gateway | 10.0.0.1 |
-| 🌍 DNS | 8.8.8.8 |
-| 📁 Shared Folder | Downloads |
-| 📋 Shared Clipboard | Bidirectional |
-| 🔄 Drag & Drop | Bidirectional |
+
+## 🛡️ Why an Isolated Lab?
+
+A cybersecurity laboratory should be isolated from real-world systems so that experiments can be performed safely.
+
+The isolated environment helps to:
+
+- 🔒 Prevent accidental interaction with external systems
+- 🌐 Control communication between lab machines
+- 🧪 Safely perform cybersecurity experiments
+- 💾 Restore the environment when required
+
+> ⚠️ All activities documented in this repository are performed for educational purposes in an authorized laboratory environment.
+
+---
 
 ---
 
