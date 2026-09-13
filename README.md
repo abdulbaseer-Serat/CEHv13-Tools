@@ -1,223 +1,219 @@
-# 🔐 Cybersecurity Lab Environment Setup
+# 🔐 NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
 
-![Cybersecurity](https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000)
-![VirtualBox](https://img.shields.io/badge/Ver-VirtualBox%207.2-0070C0?style=flat-square&labelColor=000000)
-![Kali Linux](https://img.shields.io/badge/Kali%20Linux-v2026.2-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white)
-![Linux](https://img.shields.io/badge/Skill-Linux-404040?style=flat-square&labelColor=C00000)
-![Network](https://img.shields.io/badge/Network-10.0.0.0%2F24-238F89?style=flat-square&labelColor=000000)
-![Penetration Testing](https://img.shields.io/badge/Penetration%20Testing-C000000?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white)
-![Virtualization](https://img.shields.io/badge/Skill-Virtualization-404040?style=flat-square&labelColor=C00000)
+<div align="center">
 
-> A secure and isolated cybersecurity laboratory built using Oracle VirtualBox and Kali Linux for ethical hacking, network analysis, penetration testing, and cybersecurity training.
+### 🛡️ Secure Virtual Cybersecurity Laboratory
+
+Building an isolated environment for Ethical Hacking, Network Analysis, Security Testing, and Cybersecurity Learning
+
+<br>
+
+![Cybersecurity](https://img/Cybersecurity-Lab-red?style=for-the-badge
+![VirtualBox](https://img.shields.io/badge/VirtualBox-7.2-blue?style=for-the-badge&logo=virtualwhite
+![Kali Linux](https://img.shields.io/ux-2026.2-purple?style=for-the-badge&logo=kalilinux&logoColor=white
+![Linux](https://imgio/badge/Linux-Networking-orange?style=for-the-badge&logo=linux&logoColor=white
+![Virtualization](https://img.shields.io/badge/bled-green?style=for-the-badge
+
+</div>
 
 ---
 
-## 📖 Project Overview
+## 📌 Project Overview
 
-This project documents the setup of a cybersecurity testing lab environment using Oracle VirtualBox and Kali Linux as part of the Networkwalks Cybersecurity Program (Batch B083).
+This project documents the design and deployment of a **Cybersecurity Lab Environment** using **Oracle VirtualBox** and **Kali Linux**, completed as part of the **Networkwalks Cybersecurity Program (Batch B083)**.
 
-The objective was to build a safe and isolated virtual environment where cybersecurity tools and techniques can be practiced without affecting the host operating system or external networks.
+The objective was to establish a secure and isolated laboratory where cybersecurity tools and techniques can be practiced safely without impacting the host operating system or external networks.
 
-The lab uses a custom VirtualBox NAT Network configured with the subnet:
+The laboratory is built on a custom **NAT Network (10.0.0.0/24)** and serves as the foundation for future penetration testing, digital forensics, network analysis, and ethical hacking exercises.
+
+---
+
+## 🎯 Project Objectives
+
+✅ Install Oracle VirtualBox
+
+✅ Deploy Kali Linux Virtual Machine
+
+✅ Create a Private NAT Network
+
+✅ Configure Static IPv4 Addressing
+
+✅ Enable Internet Connectivity
+
+✅ Configure DNS Resolution
+
+✅ Verify Gateway Reachability
+
+✅ Enable Shared Clipboard & Shared Folders
+
+✅ Create Baseline VM Snapshots
+
+✅ Build Foundation for Future Cybersecurity Labs
+
+---
+
+# 🏗️ Lab Architecture
 
 ```text
-10.0.0.0/24
+                           INTERNET
+                               │
+                               │
+                        Gateway 10.0.0.1
+                               │
+          ┌──────────────────────────────────┐
+          │      VirtualBox NAT Network      │
+          │          10.0.0.0/24             │
+          └──────────────────────────────────┘
+                               │
+                               │
+                  ┌────────────────────┐
+                  │     Kali Linux     │
+                  │      10.0.0.2      │
+                  └────────────────────┘
 ```
 
-with Kali Linux configured as the primary security workstation.
-
 ---
-## 🎯 Objectives
 
-The main objectives of this project are:
+# ⚙️ Lab Configuration
 
-- Install and configure Oracle VirtualBox.
-- Install and configure Kali Linux.
-- Create a private NAT Network for the cybersecurity lab.
-- Configure Kali Linux with a static IP address.
-- Configure the correct gateway and DNS settings.
-- Verify network connectivity.
-- Verify DNS resolution and security tools.
-- Create a clean snapshot of the configured Kali Linux machine.
-- Document the complete lab setup process.
-- Prepare the environment for future cybersecurity projects.
-# 🖥️ Lab Specifications
----
-## ⚙️ Lab Configuration
-
-| **🧩 Component** | **⚙️ Configuration** |
-|---|---|
-| 🖥️ Host Operating System | Windows 11 |
-| 💻 Processor | Intel Core i5-1135G7 |
-| 🧠 Host RAM | 8 GB |
-| 📦 Hypervisor | VirtualBox 7.2.16 |
+| Component | Configuration |
+|------------|---------------|
+| 🖥️ Host OS | Windows 11 |
+| 💻 CPU | Intel Core i5-1135G7 |
+| 🧠 RAM | 8 GB |
+| 📦 Hypervisor | Oracle VirtualBox 7.2.16 |
 | 🐧 Guest OS | Kali Linux 2026.2 |
-| 🧠 Kali RAM | 2048 MB |
 | 🌐 Network Type | NAT Network |
-| 🔗 Network Name | `NatNetwork` |
-| 📡 Network Range | `10.0.0.0/24` |
-| 💻 Kali IP Address | `10.0.0.2/24` |
-| 🚪 Gateway | `10.0.0.1` |
-| 🌍 DNS | `8.8.8.8` |
-| 📦 DHCP | Enabled |
-| 🌐 IPv6 | Disabled |
-| 🔢 Future VM Range | `10.0.0.3 – 10.0.0.99` |
+| 📡 Network Range | 10.0.0.0/24 |
+| 🛜 Kali IP | 10.0.0.2 |
+| 🚪 Gateway | 10.0.0.1 |
+| 🌍 DNS | 8.8.8.8 |
+| 📁 Shared Folder | Downloads |
+| 📋 Shared Clipboard | Bidirectional |
+| 🔄 Drag & Drop | Bidirectional |
 
 ---
 
-# 📁 Repository Structure
+# 🧰 Technologies Used
 
-```text
-NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
-│
-├── README.md
-│
-├── screenshots
-│   ├── nat-network.png
-│   ├── kali-network-adapter.png
-│   ├── kali-desktop.png
-│   ├── ip-address-verification.png
-│   ├── gateway-ping.png
-│   ├── internet-ping.png
-│   └── dns-resolution.png
-│
-└── documentation
-    └── project-report.pdf
-```
+<p align="center">
+
+https://img.shields.io/badge/Oracle_VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white
+
+https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white
+
+https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black
+
+https://img.shields.io/badge/Networking-008080?style=for-the-badge
+
+</p>
 
 ---
 
-# 📸 Lab Screenshots
+# 📸 Project Screenshots
 
-## 1. VirtualBox NAT Network Configuration
+## 1️⃣ NAT Network Configuration
 
-**Description**
+images/nat-network.png
 
-Created a custom VirtualBox NAT Network using:
-
-<img width="959" height="507" alt="image" src="https://github.com/user-attachments/assets/766c5102-dda4-4003-8f2e-e1abc58cce7b" />
-
+Configured an isolated VirtualBox NAT Network using:
 
 ```text
 10.0.0.0/24
 ```
 
-This allows virtual machines to communicate with each other while maintaining internet access.
+---
+
+## 2️⃣ Kali Linux Network Adapter
+
+images/kali-network-adapter.png
+
+Attached Adapter 1 directly to the custom NAT Network.
 
 ---
 
-## 2. Kali Linux Network Adapter
+## 3️⃣ Kali Linux Desktop
 
-screenshots/kali-network-adapter.png
+images/kali-desktop.png
 
-**Description**
-
-Configured Adapter 1 to attach directly to the custom NAT Network.
+Successful deployment and startup of the Kali Linux Virtual Machine.
 
 ---
 
-## 3. Kali Linux Desktop
+## 4️⃣ IP Address Verification
 
-screenshots/kali-desktop.png
-
-**Description**
-
-Successful boot of Kali Linux virtual machine.
-
----
-
-## 4. IP Address Verification
-
-screenshots/ip-address-verification.png
-
-Command:
+images/ip-address-verification.png
 
 ```bash
 ip a
 ```
 
-Expected Output:
+Result:
 
 ```text
 10.0.0.2/24
 ```
 
-✅ PASSED
+✅ VERIFIED
 
 ---
 
-## 5. Gateway Connectivity Test
+## 5️⃣ Gateway Connectivity Test
 
-screenshots/gateway-ping.png
-
-Command:
+images/gateway-ping.png
 
 ```bash
 ping -c 4 10.0.0.1
 ```
 
-Result:
-
-```text
-Successful replies received
-```
-
 ✅ PASSED
 
 ---
 
-## 6. Internet Connectivity Test
+## 6️⃣ Internet Connectivity Verification
 
-screenshots/internet-ping.png
-
-Command:
+images/internet-ping.png
 
 ```bash
 ping -c 4 8.8.8.8
 ```
 
-Result:
-
-```text
-External internet access confirmed
-```
-
 ✅ PASSED
 
 ---
 
-## 7. DNS Resolution Test
+## 7️⃣ DNS Resolution Test
 
-screenshots/dns-resolution.png
-
-Command:
+images/dns-resolution.png
 
 ```bash
 nslookup google.com
 ```
 
-Result:
-
-```text
-DNS resolution successful
-```
-
 ✅ PASSED
 
 ---
 
-# ⚠️ Troubleshooting
+# ✅ Verification Checklist
 
-## Issue: No Internet Access
+| Test | Status |
+|--------|--------|
+| NAT Network Created | ✅ |
+| Kali Linux Installed | ✅ |
+| Static IP Assigned | ✅ |
+| Gateway Reachable | ✅ |
+| Internet Access Working | ✅ |
+| DNS Resolution Working | ✅ |
+| Shared Folder Enabled | ✅ |
+| VM Snapshot Created | ✅ |
 
-### Symptoms
+---
 
-- Ping to internet fails
-- DNS not resolving
+# 🚨 Troubleshooting
 
-### Solution
+### Internet Connectivity Issue
 
-Run:
+Execute:
 
 ```bash
 sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
@@ -227,39 +223,45 @@ sudo nmcli connection down "Wired connection 1"
 sudo nmcli connection up "Wired connection 1"
 ```
 
----
+Then restart the virtual machine.
 
 ---
 
-# 🎯 Skills Learned
+# 🎓 Skills Acquired
 
-- VirtualBox Administration
-- Virtual Networking
-- NAT Network Configuration
-- Linux Networking
-- Static IPv4 Addressing
-- DNS Configuration
-- VM Snapshot Management
-- Cybersecurity Lab Design
-- Troubleshooting Network Connectivity
+🔹 Virtualization
+
+🔹 Oracle VirtualBox Administration
+
+🔹 Linux System Administration
+
+🔹 NAT Networking
+
+🔹 Static IP Configuration
+
+🔹 DNS Configuration
+
+🔹 Network Troubleshooting
+
+🔹 Cybersecurity Lab Design
+
+🔹 Snapshot & Recovery Management
 
 ---
 
-# 🔒 Ethical Use Notice
+# 🔒 Ethical Use Statement
 
-This cybersecurity laboratory was developed exclusively for educational purposes, authorized security training, and ethical hacking practice. All testing should be performed only on systems that you own or have explicit written authorization to assess.
+This laboratory environment was created exclusively for educational purposes, cybersecurity training, and authorized security research.
 
-Unauthorized testing against public or private systems is illegal and unethical.
+All testing activities should only be performed on systems where explicit authorization has been obtained.
 
 ---
 
 # 👨‍💻 Author
 
-**Abdul BASIR-SERAT**
+### Abdul BASIR-SERAT
 
-Networkwalks Cybersecurity Program
-
-Batch B083
+Cybersecurity Student | Networkwalks Batch B083
 
 ---
 
@@ -267,8 +269,18 @@ Batch B083
 
 Special thanks to:
 
-- Sir Waqas Karim (CCIE)
-- Networkwalks Mentorship Team
-- Networkwalks Academy
+✅ Sir Waqas Karim (CCIE)
 
-for providing guidance and cybersecurity training throughout this project.
+✅ Networkwalks Mentorship Team
+
+✅ Networkwalks Academy
+
+for their guidance, mentorship, and support throughout this project.
+
+---
+
+<div align="center">
+
+⭐ If you found this project useful, consider giving it a Star.
+
+</div>
