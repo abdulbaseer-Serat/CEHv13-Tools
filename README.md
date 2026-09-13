@@ -1,148 +1,317 @@
-# 🔐 NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
+# 🛡️ Secure Virtual Cybersecurity Laboratory
 
-<div align="center">
-
-### 🛡️ Secure Virtual Cybersecurity Laboratory
-
-Building an isolated environment for Ethical Hacking, Network Analysis, Security Testing, and Cybersecurity Learning
-
-<br>
-
-https://img.shields.io/badge/Cybersecurity-Lab-red?style=for-the-badge
-https://img.shields.io/badge/VirtualBox-7.2-blue?style=for-the-badge&logo=virtualbox&logoColor=white
-https://img.shields.io/badge/Kali_Linux-2026.2-purple?style=for-the-badge&logo=kalilinux&logoColor=white
-https://img.shields.io/badge/Linux-Networking-orange?style=for-the-badge&logo=linux&logoColor=white
-https://img.shields.io/badge/Virtualization-Enabled-green?style=for-the-badge
-
-</div>
+> A secure and isolated cybersecurity laboratory built using Oracle VirtualBox and Kali Linux for ethical hacking, network analysis, penetration testing, and cybersecurity training.
 
 ---
 
-## 📌 Project Overview
+# 📖 Project Overview
 
-This project documents the design and deployment of a **Cybersecurity Lab Environment** using **Oracle VirtualBox** and **Kali Linux**, completed as part of the **Networkwalks Cybersecurity Program (Batch B083)**.
+This project documents the setup of a cybersecurity testing lab environment using Oracle VirtualBox and Kali Linux as part of the Networkwalks Cybersecurity Program (Batch B083).
 
-The objective was to establish a secure and isolated laboratory where cybersecurity tools and techniques can be practiced safely without impacting the host operating system or external networks.
+The objective was to build a safe and isolated virtual environment where cybersecurity tools and techniques can be practiced without affecting the host operating system or external networks.
 
-The laboratory is built on a custom **NAT Network (10.0.0.0/24)** and serves as the foundation for future penetration testing, digital forensics, network analysis, and ethical hacking exercises.
-
----
-
-## 🎯 Project Objectives
-
-✅ Install Oracle VirtualBox
-
-✅ Deploy Kali Linux Virtual Machine
-
-✅ Create a Private NAT Network
-
-✅ Configure Static IPv4 Addressing
-
-✅ Enable Internet Connectivity
-
-✅ Configure DNS Resolution
-
-✅ Verify Gateway Reachability
-
-✅ Enable Shared Clipboard & Shared Folders
-
-✅ Create Baseline VM Snapshots
-
-✅ Build Foundation for Future Cybersecurity Labs
-
----
-
-# 🏗️ Lab Architecture
-
-```text
-                           INTERNET
-                               │
-                               │
-                        Gateway 10.0.0.1
-                               │
-          ┌──────────────────────────────────┐
-          │      VirtualBox NAT Network      │
-          │          10.0.0.0/24             │
-          └──────────────────────────────────┘
-                               │
-                               │
-                  ┌────────────────────┐
-                  │     Kali Linux     │
-                  │      10.0.0.2      │
-                  └────────────────────┘
-```
-
----
-
-# ⚙️ Lab Configuration
-
-| Component | Configuration |
-|------------|---------------|
-| 🖥️ Host OS | Windows 11 |
-| 💻 CPU | Intel Core i5-1135G7 |
-| 🧠 RAM | 8 GB |
-| 📦 Hypervisor | Oracle VirtualBox 7.2.16 |
-| 🐧 Guest OS | Kali Linux 2026.2 |
-| 🌐 Network Type | NAT Network |
-| 📡 Network Range | 10.0.0.0/24 |
-| 🛜 Kali IP | 10.0.0.2 |
-| 🚪 Gateway | 10.0.0.1 |
-| 🌍 DNS | 8.8.8.8 |
-| 📁 Shared Folder | Downloads |
-| 📋 Shared Clipboard | Bidirectional |
-| 🔄 Drag & Drop | Bidirectional |
-
----
-
-# 🧰 Technologies Used
-
-<p align="center">
-
-https://img.shields.io/badge/Oracle_VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white
-
-https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white
-
-https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black
-
-https://img.shields.io/badge/Networking-008080?style=for-the-badge
-
-</p>
-
----
-
-# 📸 Project Screenshots
-
-## 1️⃣ NAT Network Configuration
-
-images/nat-network.png
-
-Configured an isolated VirtualBox NAT Network using:
+The lab uses a custom VirtualBox NAT Network configured with the subnet:
 
 ```text
 10.0.0.0/24
 ```
 
----
-
-## 2️⃣ Kali Linux Network Adapter
-
-images/kali-network-adapter.png
-
-Attached Adapter 1 directly to the custom NAT Network.
+with Kali Linux configured as the primary security workstation.
 
 ---
 
-## 3️⃣ Kali Linux Desktop
+# 🖥️ Lab Specifications
 
-images/kali-desktop.png
+## Host Machine
 
-Successful deployment and startup of the Kali Linux Virtual Machine.
+| Component | Details |
+|------------|-----------|
+| Operating System | Windows 11 |
+| Processor | Intel Core i7-13620H |
+| Virtualization Platform | Oracle VM VirtualBox |
+| Storage | SSD |
+| Memory | 16GB+ RAM |
+
+## Kali Linux VM
+
+| Configuration | Value |
+|--------------|---------|
+| OS | Kali Linux |
+| Network Type | NAT Network |
+| Static IP | 10.0.0.2 |
+| Subnet Mask | 255.255.255.0 |
+| Gateway | 10.0.0.1 |
+| DNS Server | 8.8.8.8 |
 
 ---
 
-## 4️⃣ IP Address Verification
+# 🌐 Network Architecture
 
-images/ip-address-verification.png
+```text
+                    INTERNET
+                        │
+                        │
+                Gateway 10.0.0.1
+                        │
+         ┌──────────────────────────┐
+         │  VirtualBox NAT Network  │
+         │      10.0.0.0/24         │
+         └──────────────────────────┘
+                        │
+                        │
+               Kali Linux VM
+                  10.0.0.2
+```
+
+---
+
+# 📁 Repository Structure
+
+```text
+NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
+│
+├── README.md
+│
+├── screenshots
+│   ├── nat-network.png
+│   ├── kali-network-adapter.png
+│   ├── kali-desktop.png
+│   ├── ip-address-verification.png
+│   ├── gateway-ping.png
+│   ├── internet-ping.png
+│   └── dns-resolution.png
+│
+└── documentation
+    └── project-report.pdf
+```
+
+---
+
+# 📸 Lab Screenshots
+
+## 1. VirtualBox NAT Network Configuration
+
+screenshots/nat-network.png
+
+**Description**
+
+Created a custom VirtualBox NAT Network using:
+
+```text
+10.0.0.0/24
+```
+
+This allows virtual machines to communicate with each other while maintaining internet access.
+
+---
+
+## 2. Kali Linux Network Adapter
+
+screenshots/kali-network-adapter.png
+
+**Description**
+
+Configured Adapter 1 to attach directly to the custom NAT Network.
+
+---
+
+## 3. Kali Linux Desktop
+
+screenshots/kali-desktop.png
+
+**Description**
+
+Successful boot of Kali Linux virtual machine.
+
+---
+
+## 4. IP Address Verification
+
+screenshots/ip-address-verification.png
+
+Command:
+
+```bash
+ip a
+```
+
+Expected Output:
+
+```text
+10.0.0.2/24
+```
+
+✅ PASSED
+
+---
+
+## 5. Gateway Connectivity Test
+
+screenshots/gateway-ping.png
+
+Command:
+
+```bash
+ping -c 4 10.0.0.1
+```
+
+Result:
+
+```text
+Successful replies received
+```
+
+✅ PASSED
+
+---
+
+## 6. Internet Connectivity Test
+
+screenshots/internet-ping.png
+
+Command:
+
+```bash
+ping -c 4 8.8.8.8
+```
+
+Result:
+
+```text
+External internet access confirmed
+```
+
+✅ PASSED
+
+---
+
+## 7. DNS Resolution Test
+
+screenshots/dns-resolution.png
+
+Command:
+
+```bash
+nslookup google.com
+```
+
+Result:
+
+```text
+DNS resolution successful
+```
+
+✅ PASSED
+
+---
+
+# 🚀 Implementation Steps
+
+## Step 1 – Install VirtualBox
+
+Downloaded and installed Oracle VM VirtualBox.
+
+Official Website:
+
+https://www.virtualbox.org
+
+---
+
+## Step 2 – Create NAT Network
+
+Opened:
+
+```text
+File
+ └── Tools
+      └── Network Manager
+```
+
+Created:
+
+```text
+NatNetwork
+```
+
+Network Address:
+
+```text
+10.0.0.0/24
+```
+
+DHCP Enabled:
+
+```text
+Yes
+```
+
+---
+
+## Step 3 – Import Kali Linux
+
+Downloaded the official Kali Linux VirtualBox image and imported it into VirtualBox.
+
+Official Website:
+
+https://www.kali.org/get-kali/
+
+---
+
+## Step 4 – Configure VM Settings
+
+### General
+
+Enabled:
+
+```text
+Shared Clipboard = Bidirectional
+Drag and Drop = Bidirectional
+```
+
+### Shared Folders
+
+Shared Host Folder:
+
+```text
+Downloads
+```
+
+Auto-Mount:
+
+```text
+Enabled
+```
+
+---
+
+## Step 5 – Configure Static IP
+
+Kali Linux Network Configuration:
+
+```text
+IP Address  : 10.0.0.2
+Subnet Mask : 255.255.255.0
+Gateway     : 10.0.0.1
+DNS         : 8.8.8.8
+```
+
+---
+
+## Step 6 – Create Snapshot
+
+Created a clean recovery snapshot named:
+
+```text
+Clean Kali Baseline
+```
+
+This allows quick rollback after installing tools or performing testing activities.
+
+---
+
+# ✅ Verification Tests
+
+## Interface Verification
 
 ```bash
 ip a
@@ -151,16 +320,14 @@ ip a
 Result:
 
 ```text
-10.0.0.2/24
+10.0.0.2/24 assigned
 ```
 
-✅ VERIFIED
+✅ PASSED
 
 ---
 
-## 5️⃣ Gateway Connectivity Test
-
-images/gateway-ping.png
+## Gateway Reachability
 
 ```bash
 ping -c 4 10.0.0.1
@@ -170,9 +337,7 @@ ping -c 4 10.0.0.1
 
 ---
 
-## 6️⃣ Internet Connectivity Verification
-
-images/internet-ping.png
+## Internet Access Verification
 
 ```bash
 ping -c 4 8.8.8.8
@@ -182,9 +347,7 @@ ping -c 4 8.8.8.8
 
 ---
 
-## 7️⃣ DNS Resolution Test
-
-images/dns-resolution.png
+## DNS Resolution
 
 ```bash
 nslookup google.com
@@ -194,26 +357,18 @@ nslookup google.com
 
 ---
 
-# ✅ Verification Checklist
+# ⚠️ Troubleshooting
 
-| Test | Status |
-|--------|--------|
-| NAT Network Created | ✅ |
-| Kali Linux Installed | ✅ |
-| Static IP Assigned | ✅ |
-| Gateway Reachable | ✅ |
-| Internet Access Working | ✅ |
-| DNS Resolution Working | ✅ |
-| Shared Folder Enabled | ✅ |
-| VM Snapshot Created | ✅ |
+## Issue 1: No Internet Access
 
----
+### Symptoms
 
-# 🚨 Troubleshooting
+- Ping to internet fails
+- DNS not resolving
 
-### Internet Connectivity Issue
+### Solution
 
-Execute:
+Run:
 
 ```bash
 sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
@@ -223,45 +378,61 @@ sudo nmcli connection down "Wired connection 1"
 sudo nmcli connection up "Wired connection 1"
 ```
 
-Then restart the virtual machine.
+---
+
+## Issue 2: VirtualBox VM Won't Start
+
+### Cause
+
+Hardware virtualization disabled.
+
+### Solution
+
+Enable:
+
+```text
+Intel VT-x
+```
+
+or
+
+```text
+AMD-V
+```
+
+from BIOS/UEFI settings.
 
 ---
 
-# 🎓 Skills Acquired
+# 🎯 Skills Learned
 
-🔹 Virtualization
-
-🔹 Oracle VirtualBox Administration
-
-🔹 Linux System Administration
-
-🔹 NAT Networking
-
-🔹 Static IP Configuration
-
-🔹 DNS Configuration
-
-🔹 Network Troubleshooting
-
-🔹 Cybersecurity Lab Design
-
-🔹 Snapshot & Recovery Management
+- VirtualBox Administration
+- Virtual Networking
+- NAT Network Configuration
+- Linux Networking
+- Static IPv4 Addressing
+- DNS Configuration
+- VM Snapshot Management
+- Cybersecurity Lab Design
+- Troubleshooting Network Connectivity
 
 ---
 
-# 🔒 Ethical Use Statement
+# 🔒 Ethical Use Notice
 
-This laboratory environment was created exclusively for educational purposes, cybersecurity training, and authorized security research.
+This cybersecurity laboratory was developed exclusively for educational purposes, authorized security training, and ethical hacking practice. All testing should be performed only on systems that you own or have explicit written authorization to assess.
 
-All testing activities should only be performed on systems where explicit authorization has been obtained.
+Unauthorized testing against public or private systems is illegal and unethical.
 
 ---
 
 # 👨‍💻 Author
 
-### Abdul BASIR-SERAT
+**Abdul BASIR-SERAT**
 
-Cybersecurity Student | Networkwalks Batch B083
+Networkwalks Cybersecurity Program
+
+Batch B083
 
 ---
 
@@ -269,18 +440,8 @@ Cybersecurity Student | Networkwalks Batch B083
 
 Special thanks to:
 
-✅ Sir Waqas Karim (CCIE)
+- Sir Waqas Karim (CCIE)
+- Networkwalks Mentorship Team
+- Networkwalks Academy
 
-✅ Networkwalks Mentorship Team
-
-✅ Networkwalks Academy
-
-for their guidance, mentorship, and support throughout this project.
-
----
-
-<div align="center">
-
-⭐ If you found this project useful, consider giving it a Star.
-
-</div>
+for providing guidance and cybersecurity training throughout this project.
