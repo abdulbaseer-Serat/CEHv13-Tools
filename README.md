@@ -114,14 +114,14 @@ The laboratory is built on a custom **NAT Network (10.0.0.0/24)** and serves as 
 
 ## 1️⃣ NAT Network Configuration
 
-images/nat-network.png
+**Description**
 
-Configured an isolated VirtualBox NAT Network using:
+Created a custom VirtualBox NAT Network using:
 
 ```text
 10.0.0.0/24
 ```
-
+his allows virtual machines to communicate with each other while maintaining internet access.
 ---
 
 ## 2️⃣ Kali Linux Network Adapter
