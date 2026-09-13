@@ -93,7 +93,7 @@ NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
 
 ---
 
-## 4. Lab Architecture
+## 1. Lab Architecture
 
 ![Lab Architecture]
 
@@ -101,7 +101,7 @@ The Kali Linux VM is connected to a private NAT Network. Additional target machi
 
 ---
 
-## 5. Setup Procedure
+## 2. Setup Procedure
 
 ### Step 1: Install 7-Zip
 
@@ -158,7 +158,7 @@ After completing the initial configuration, a clean snapshot named **Clean Kali 
 
 ---
 
-## 6. Lab Verification
+## 3. Lab Verification
 
 The following commands were used to verify the setup:
 
@@ -176,7 +176,7 @@ The following commands were used to verify the setup:
 
 ---
 
-## 7. Problem Encountered
+## 4. Problem Encountered
 
 ### VirtualBox "Can't Open Machine" Error
 
@@ -187,7 +187,7 @@ I switched to the main administrator account on the laptop, opened VirtualBox, a
 
 ---
 
-## 8. What I Learned
+## 5. What I Learned
 
 * The difference between **NAT and NAT Network**.
 * How virtual machines communicate through virtual networks.
@@ -197,7 +197,7 @@ I switched to the main administrator account on the laptop, opened VirtualBox, a
 
 ---
 
-## 9. Security and Ethical Use
+## 6. Security and Ethical Use
 
 This cybersecurity laboratory was developed exclusively for educational purposes, authorized security training, and ethical hacking practice. All testing should be performed only on systems that you own or have explicit written authorization to assess.
 
@@ -205,7 +205,7 @@ Unauthorized testing against public or private systems is illegal and unethical.
 
 ---
 
-## 10. Tools Used
+## 7. Tools Used
 
 * 7-Zip
 * Oracle VirtualBox
@@ -214,7 +214,7 @@ Unauthorized testing against public or private systems is illegal and unethical.
 
 ---
 
-## 11. Conclusion
+## 8. Conclusion
 
 The virtual cybersecurity laboratory was successfully configured using VirtualBox and Kali Linux. The environment provides a controlled foundation for future cybersecurity and penetration-testing exercises.
 
