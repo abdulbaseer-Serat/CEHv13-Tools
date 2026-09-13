@@ -12,7 +12,7 @@
 
 ---
 
-# 📖 Project Overview
+## 📖 Project Overview
 
 This project documents the setup of a cybersecurity testing lab environment using Oracle VirtualBox and Kali Linux as part of the Networkwalks Cybersecurity Program (Batch B083).
 
@@ -43,26 +43,25 @@ The main objectives of this project are:
 - Prepare the environment for future cybersecurity projects.
 # 🖥️ Lab Specifications
 ---
-## Host Machine
+## ⚙️ Lab Configuration
 
-| Component | Details |
-|------------|-----------|
-| Operating System | Windows 11 |
-| Processor | Intel Core i7-13620H |
-| Virtualization Platform | Oracle VM VirtualBox |
-| Storage | SSD |
-| Memory | 16GB+ RAM |
-
-## Kali Linux VM
-
-| Configuration | Value |
-|--------------|---------|
-| OS | Kali Linux |
-| Network Type | NAT Network |
-| Static IP | 10.0.0.2 |
-| Subnet Mask | 255.255.255.0 |
-| Gateway | 10.0.0.1 |
-| DNS Server | 8.8.8.8 |
+| **🧩 Component** | **⚙️ Configuration** |
+|---|---|
+| 🖥️ Host Operating System | Windows 11 |
+| 💻 Processor | Intel Core i5-1135G7 |
+| 🧠 Host RAM | 8 GB |
+| 📦 Hypervisor | VirtualBox 7.2.16 |
+| 🐧 Guest OS | Kali Linux 2026.2 |
+| 🧠 Kali RAM | 2048 MB |
+| 🌐 Network Type | NAT Network |
+| 🔗 Network Name | `NatNetwork` |
+| 📡 Network Range | `10.0.0.0/24` |
+| 💻 Kali IP Address | `10.0.0.2/24` |
+| 🚪 Gateway | `10.0.0.1` |
+| 🌍 DNS | `8.8.8.8` |
+| 📦 DHCP | Enabled |
+| 🌐 IPv6 | Disabled |
+| 🔢 Future VM Range | `10.0.0.3 – 10.0.0.99` |
 
 ---
 
