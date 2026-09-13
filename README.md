@@ -23,28 +23,17 @@ with Kali Linux configured as the primary security workstation.
 
 ---
 
-# 🖥️ Lab Specifications
-
-## Host Machine
-
-| Component | Details |
-|------------|-----------|
-| Operating System | Windows 11 |
-| Processor | Intel Core i7-13620H |
-| Virtualization Platform | Oracle VM VirtualBox |
-| Storage | SSD |
-| Memory | 16GB+ RAM |
-
-## Kali Linux VM
-
-| Configuration | Value |
-|--------------|---------|
-| OS | Kali Linux |
-| Network Type | NAT Network |
-| Static IP | 10.0.0.2 |
-| Subnet Mask | 255.255.255.0 |
-| Gateway | 10.0.0.1 |
-| DNS Server | 8.8.8.8 |
+## 🎯 Project Objectives
+✅ Install Oracle VirtualBox
+✅ Deploy Kali Linux Virtual Machine
+✅ Create a Private NAT Network
+✅ Configure Static IPv4 Addressing
+✅ Enable Internet Connectivity
+✅ Configure DNS Resolution
+✅ Verify Gateway Reachability
+✅ Enable Shared Clipboard & Shared Folders
+✅ Create Baseline VM Snapshots
+✅ Build Foundation for Future Cybersecurity Labs
 
 ---
 
