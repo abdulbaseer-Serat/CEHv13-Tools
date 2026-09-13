@@ -45,26 +45,6 @@ with Kali Linux configured as the primary security workstation.
 
 ---
 
-# 🌐 Network Architecture
-
-```text
-                    INTERNET
-                        │
-                        │
-                Gateway 10.0.0.1
-                        │
-         ┌──────────────────────────┐
-         │  VirtualBox NAT Network  │
-         │      10.0.0.0/24         │
-         └──────────────────────────┘
-                        │
-                        │
-               Kali Linux VM
-                  10.0.0.2
-```
-
----
-
 # 📁 Repository Structure
 
 ```text
