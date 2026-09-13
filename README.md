@@ -42,8 +42,6 @@ with Kali Linux configured as the primary security workstation.
 ✅ Build Foundation for Future Cybersecurity Labs
 
 ---
-
----
 # ⚙️ Lab Configuration
 | Component | Configuration |
 |------------|---------------|
@@ -63,7 +61,6 @@ with Kali Linux configured as the primary security workstation.
 
 ---
 
----
 
 # 🌐 Network Architecture
 
