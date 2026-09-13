@@ -19,6 +19,29 @@ The lab uses a custom VirtualBox NAT Network configured with the subnet:
 with Kali Linux configured as the primary security workstation.
 
 ---
+## 🎯 Project Objectives
+
+✅ Install Oracle VirtualBox
+
+✅ Deploy Kali Linux Virtual Machine
+
+✅ Create a Private NAT Network
+
+✅ Configure Static IPv4 Addressing
+
+✅ Enable Internet Connectivity
+
+✅ Configure DNS Resolution
+
+✅ Verify Gateway Reachability
+
+✅ Enable Shared Clipboard & Shared Folders
+
+✅ Create Baseline VM Snapshots
+
+✅ Build Foundation for Future Cybersecurity Labs
+
+---
 
 # 🖥️ Lab Specifications
 
