@@ -1,158 +1,295 @@
-# NETWORKWALKS-B083-WK1-PM1-ANDROID-VIRTUALBOX-LAB
+# NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
 
-> A secure Android-x86 virtual machine deployed in Oracle VirtualBox and connected to the same NAT Network as Kali Linux for cybersecurity lab testing and network communication verification.
-
----
-
-## 📖 Overview
-
-This project documents the deployment and configuration of an Android-x86 virtual machine within Oracle VirtualBox as part of the Networkwalks Cybersecurity Program.
-
-The Android VM was integrated into the same NAT Network as the Kali Linux workstation, creating a controlled lab environment for testing connectivity, networking, and future cybersecurity exercises.
+> A secure and isolated cybersecurity laboratory built using Oracle VirtualBox and Kali Linux for ethical hacking, network analysis, penetration testing, and cybersecurity training.
 
 ---
 
-## 🖥️ Lab Environment
+# 📖 Project Overview
 
-### Host Machine
+This project documents the setup of a cybersecurity testing lab environment using Oracle VirtualBox and Kali Linux as part of the Networkwalks Cybersecurity Program (Batch B083).
 
-- **Operating System:** Windows 11
-- **Hypervisor:** Oracle VM VirtualBox
-- **Processor:** Intel Core i7-13620H
+The objective was to build a safe and isolated virtual environment where cybersecurity tools and techniques can be practiced without affecting the host operating system or external networks.
 
-### Virtual Machines
+The lab uses a custom VirtualBox NAT Network configured with the subnet:
 
-| VM | IP Address |
-|----|------------|
-| Kali Linux | 10.0.0.2 |
-| Android-x86 9.0 | 10.0.0.9 |
+```text
+10.0.0.0/24
+```
 
-### Network Configuration
+with Kali Linux configured as the primary security workstation.
 
-| Setting | Value |
-|----------|---------|
-| Network Type | VirtualBox NAT Network |
-| Network Range | 10.0.0.0/24 |
+---
+
+# 🖥️ Lab Specifications
+
+## Host Machine
+
+| Component | Details |
+|------------|-----------|
+| Operating System | Windows 11 |
+| Processor | Intel Core i7-13620H |
+| Virtualization Platform | Oracle VM VirtualBox |
+| Storage | SSD |
+| Memory | 16GB+ RAM |
+
+## Kali Linux VM
+
+| Configuration | Value |
+|--------------|---------|
+| OS | Kali Linux |
+| Network Type | NAT Network |
+| Static IP | 10.0.0.2 |
+| Subnet Mask | 255.255.255.0 |
 | Gateway | 10.0.0.1 |
 | DNS Server | 8.8.8.8 |
 
 ---
 
-## 🏗️ Lab Topology
+# 🌐 Network Architecture
 
 ```text
                     INTERNET
-                        |
-                        |
-                 Gateway 10.0.0.1
-                        |
-             VirtualBox NAT Network
-                  10.0.0.0/24
-                        |
-        ---------------------------------
-        |                               |
-        |                               |
-   Kali Linux VM                 Android-x86 VM
-     10.0.0.2                       10.0.0.9
+                        │
+                        │
+                Gateway 10.0.0.1
+                        │
+         ┌──────────────────────────┐
+         │  VirtualBox NAT Network  │
+         │      10.0.0.0/24         │
+         └──────────────────────────┘
+                        │
+                        │
+               Kali Linux VM
+                  10.0.0.2
 ```
 
 ---
 
-# 📸 Screenshots
+# 📁 Repository Structure
 
-## 1. Android-x86 ISO Download
-
-images/android-download.png
-
----
-
-## 2. Virtual Machine Creation
-
-images/virtualbox-create-vm.png
-
----
-
-## 3. Android Installation
-
-images/android-installation.png
-
----
-
-## 4. NAT Network Configuration
-
-images/nat-network-config.png
+```text
+NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
+│
+├── README.md
+│
+├── screenshots
+│   ├── nat-network.png
+│   ├── kali-network-adapter.png
+│   ├── kali-desktop.png
+│   ├── ip-address-verification.png
+│   ├── gateway-ping.png
+│   ├── internet-ping.png
+│   └── dns-resolution.png
+│
+└── documentation
+    └── project-report.pdf
+```
 
 ---
 
-## 5. Static IP Configuration
+# 📸 Lab Screenshots
 
-images/android-static-ip.png
+## 1. VirtualBox NAT Network Configuration
+
+screenshots/nat-network.png
+
+**Description**
+
+Created a custom VirtualBox NAT Network using:
+
+```text
+10.0.0.0/24
+```
+
+This allows virtual machines to communicate with each other while maintaining internet access.
 
 ---
 
-## 6. Android to Kali Ping Test
+## 2. Kali Linux Network Adapter
 
-images/android-ping-kali.png
+screenshots/kali-network-adapter.png
 
----
+**Description**
 
-## 7. Kali to Android Ping Test
-
-images/kali-ping-android.png
+Configured Adapter 1 to attach directly to the custom NAT Network.
 
 ---
 
-## 8. Internet Connectivity Test
+## 3. Kali Linux Desktop
 
-images/android-internet-test.png
+screenshots/kali-desktop.png
+
+**Description**
+
+Successful boot of Kali Linux virtual machine.
+
+---
+
+## 4. IP Address Verification
+
+screenshots/ip-address-verification.png
+
+Command:
+
+```bash
+ip a
+```
+
+Expected Output:
+
+```text
+10.0.0.2/24
+```
+
+✅ PASSED
+
+---
+
+## 5. Gateway Connectivity Test
+
+screenshots/gateway-ping.png
+
+Command:
+
+```bash
+ping -c 4 10.0.0.1
+```
+
+Result:
+
+```text
+Successful replies received
+```
+
+✅ PASSED
+
+---
+
+## 6. Internet Connectivity Test
+
+screenshots/internet-ping.png
+
+Command:
+
+```bash
+ping -c 4 8.8.8.8
+```
+
+Result:
+
+```text
+External internet access confirmed
+```
+
+✅ PASSED
+
+---
+
+## 7. DNS Resolution Test
+
+screenshots/dns-resolution.png
+
+Command:
+
+```bash
+nslookup google.com
+```
+
+Result:
+
+```text
+DNS resolution successful
+```
+
+✅ PASSED
 
 ---
 
 # 🚀 Implementation Steps
 
-## Step 1 - Download Android-x86
+## Step 1 – Install VirtualBox
 
-Downloaded the Android-x86 9.0 ISO image from the official Android-x86 website.
+Downloaded and installed Oracle VM VirtualBox.
 
----
+Official Website:
 
-## Step 2 - Create a Virtual Machine
-
-Configured:
-
-- VM Name: Android9-Lab
-- Type: Linux
-- Version: Other Linux (64-bit)
-- Memory: 2048 MB
-- Storage: 10 GB VDI (Dynamic)
+https://www.virtualbox.org
 
 ---
 
-## Step 3 - Install Android-x86
+## Step 2 – Create NAT Network
 
-Installation settings:
-
-- Filesystem: EXT4
-- GRUB Bootloader: Enabled
-- System Partition Writable: Yes
-
----
-
-## Step 4 - Configure Network
-
-Adapter Settings:
+Opened:
 
 ```text
-Attached To : NAT Network
-Network Name: NatNetwork
+File
+ └── Tools
+      └── Network Manager
+```
+
+Created:
+
+```text
+NatNetwork
+```
+
+Network Address:
+
+```text
+10.0.0.0/24
+```
+
+DHCP Enabled:
+
+```text
+Yes
 ```
 
 ---
 
-## Step 5 - Configure Static Addressing
+## Step 3 – Import Kali Linux
+
+Downloaded the official Kali Linux VirtualBox image and imported it into VirtualBox.
+
+Official Website:
+
+https://www.kali.org/get-kali/
+
+---
+
+## Step 4 – Configure VM Settings
+
+### General
+
+Enabled:
 
 ```text
-IP Address  : 10.0.0.9
+Shared Clipboard = Bidirectional
+Drag and Drop = Bidirectional
+```
+
+### Shared Folders
+
+Shared Host Folder:
+
+```text
+Downloads
+```
+
+Auto-Mount:
+
+```text
+Enabled
+```
+
+---
+
+## Step 5 – Configure Static IP
+
+Kali Linux Network Configuration:
+
+```text
+IP Address  : 10.0.0.2
 Subnet Mask : 255.255.255.0
 Gateway     : 10.0.0.1
 DNS         : 8.8.8.8
@@ -160,99 +297,151 @@ DNS         : 8.8.8.8
 
 ---
 
-# ✅ Connectivity Verification
+## Step 6 – Create Snapshot
 
-## Android → Kali
+Created a clean recovery snapshot named:
+
+```text
+Clean Kali Baseline
+```
+
+This allows quick rollback after installing tools or performing testing activities.
+
+---
+
+# ✅ Verification Tests
+
+## Interface Verification
 
 ```bash
-ping 10.0.0.2
+ip a
 ```
 
 Result:
 
 ```text
-Reply received successfully
+10.0.0.2/24 assigned
 ```
 
 ✅ PASSED
 
 ---
 
-## Kali → Android
+## Gateway Reachability
 
 ```bash
-ping 10.0.0.9
-```
-
-Result:
-
-```text
-Reply received successfully
+ping -c 4 10.0.0.1
 ```
 
 ✅ PASSED
 
 ---
 
-## Android → Internet
+## Internet Access Verification
 
 ```bash
-ping 8.8.8.8
-```
-
-Result:
-
-```text
-Internet access confirmed
+ping -c 4 8.8.8.8
 ```
 
 ✅ PASSED
 
 ---
 
-# ⚠️ Challenges Encountered
+## DNS Resolution
 
-## Issue 1: Network Communication Failure
+```bash
+nslookup google.com
+```
+
+✅ PASSED
+
+---
+
+# ⚠️ Troubleshooting
+
+## Issue 1: No Internet Access
+
+### Symptoms
+
+- Ping to internet fails
+- DNS not resolving
+
+### Solution
+
+Run:
+
+```bash
+sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+
+sudo nmcli connection down "Wired connection 1"
+
+sudo nmcli connection up "Wired connection 1"
+```
+
+---
+
+## Issue 2: VirtualBox VM Won't Start
 
 ### Cause
 
-Incorrect network adapter attachment.
+Hardware virtualization disabled.
 
-### Fix
+### Solution
 
-Verified that both Kali Linux and Android VMs were connected to the same NAT Network.
-
----
-
-## Issue 2: Internet Access Not Working
-
-### Cause
-
-Incorrect gateway or DNS values.
-
-### Fix
-
-Configured:
+Enable:
 
 ```text
-Gateway = 10.0.0.1
-DNS = 8.8.8.8
+Intel VT-x
 ```
+
+or
+
+```text
+AMD-V
+```
+
+from BIOS/UEFI settings.
 
 ---
 
 # 🎯 Skills Learned
 
-- Android-x86 Deployment
-- Oracle VirtualBox Administration
+- VirtualBox Administration
+- Virtual Networking
 - NAT Network Configuration
+- Linux Networking
 - Static IPv4 Addressing
-- VM-to-VM Communication
-- Network Troubleshooting
-- Cybersecurity Lab Building
+- DNS Configuration
+- VM Snapshot Management
+- Cybersecurity Lab Design
+- Troubleshooting Network Connectivity
 
 ---
 
-# 📂 Repository Structure
+# 🔒 Ethical Use Notice
 
-```text
+This cybersecurity laboratory was developed exclusively for educational purposes, authorized security training, and ethical hacking practice. All testing should be performed only on systems that you own or have explicit written authorization to assess.
+
+Unauthorized testing against public or private systems is illegal and unethical.
+
+---
+
+# 👨‍💻 Author
+
+**Abdul BASIR-SERAT**
+
+Networkwalks Cybersecurity Program
+
+Batch B083
+
+---
+
+# 🙏 Acknowledgements
+
+Special thanks to:
+
+- Sir Waqas Karim (CCIE)
+- Networkwalks Mentorship Team
+- Networkwalks Academy
+
+for providing guidance and cybersecurity training throughout this project.
