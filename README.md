@@ -90,12 +90,10 @@ NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
 # 📸 Lab Screenshots
 
 ## 1. VirtualBox NAT Network Configuration
-
+**Description**
+Created a custom VirtualBox NAT Network using:
 <img width="959" height="507" alt="image" src="https://github.com/user-attachments/assets/766c5102-dda4-4003-8f2e-e1abc58cce7b" />
 
-**Description**
-
-Created a custom VirtualBox NAT Network using:
 
 ```text
 10.0.0.0/24
