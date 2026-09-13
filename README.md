@@ -65,8 +65,8 @@ The isolated environment helps to:
            └──────────────────────────┘
                         │
                         │
-               Kali Linux VM
-                  10.0.0.2
+                  Kali Linux VM
+                     10.0.0.2
 ```
 
 ---
@@ -125,7 +125,7 @@ Successful boot of Kali Linux virtual machine.
 
 ---
 
-## 4. IP Address Verification
+### 4. IP Address Verification
 
 screenshots/ip-address-verification.png
 
@@ -142,7 +142,7 @@ Expected Output:
 ```
 ---
 
-## 5. Gateway Connectivity Test
+### 5. Gateway Connectivity Test
 
 screenshots/gateway-ping.png
 
@@ -160,7 +160,7 @@ Successful replies received
 
 ---
 
-## 6. Internet Connectivity Test
+### 6. Internet Connectivity Test
 
 screenshots/internet-ping.png
 
@@ -176,11 +176,9 @@ Result:
 External internet access confirmed
 ```
 
-✅ PASSED
-
 ---
 
-## 7. DNS Resolution Test
+### 7. DNS Resolution Test
 
 screenshots/dns-resolution.png
 
@@ -196,90 +194,33 @@ Result:
 DNS resolution successful
 ```
 
-✅ PASSED
-
 ---
 
-# 🚀 Implementation Steps
+## 🚀 Implementation Steps
 
-## Step 1 – Install VirtualBox
+### Step 1 – Install VirtualBox
 
 Downloaded and installed Oracle VM VirtualBox.
 
-Official Website:
+Official Website: https://www.virtualbox.org
 
-https://www.virtualbox.org
+```
 
+```
 ---
 
-## Step 2 – Create NAT Network
-
-Opened:
-
-```text
-File
- └── Tools
-      └── Network Manager
-```
-
-Created:
-
-```text
-NatNetwork
-```
-
-Network Address:
-
-```text
-10.0.0.0/24
-```
-
-DHCP Enabled:
-
-```text
-Yes
-```
-
----
-
-## Step 3 – Import Kali Linux
+### Step 2 – Import Kali Linux
 
 Downloaded the official Kali Linux VirtualBox image and imported it into VirtualBox.
 
-Official Website:
+Official Website: https://www.kali.org/get-kali/
 
-https://www.kali.org/get-kali/
-
----
-
-## Step 4 – Configure VM Settings
-
-### General
-
-Enabled:
-
-```text
-Shared Clipboard = Bidirectional
-Drag and Drop = Bidirectional
-```
-
-### Shared Folders
-
-Shared Host Folder:
-
-```text
-Downloads
-```
-
-Auto-Mount:
-
-```text
-Enabled
-```
 
 ---
 
-## Step 5 – Configure Static IP
+---
+
+### Step 3 – Configure Static IP
 
 Kali Linux Network Configuration:
 
@@ -292,7 +233,7 @@ DNS         : 8.8.8.8
 
 ---
 
-## Step 6 – Create Snapshot
+### Step 4 – Create Snapshot
 
 Created a clean recovery snapshot named:
 
@@ -304,9 +245,9 @@ This allows quick rollback after installing tools or performing testing activiti
 
 ---
 
-# ✅ Verification Tests
+## ✅ Verification Tests
 
-## Interface Verification
+### Interface Verification
 
 ```bash
 ip a
@@ -318,41 +259,33 @@ Result:
 10.0.0.2/24 assigned
 ```
 
-✅ PASSED
-
 ---
 
-## Gateway Reachability
+### Gateway Reachability
 
 ```bash
 ping -c 4 10.0.0.1
 ```
 
-✅ PASSED
-
 ---
 
-## Internet Access Verification
+### Internet Access Verification
 
 ```bash
 ping -c 4 8.8.8.8
 ```
 
-✅ PASSED
-
 ---
 
-## DNS Resolution
+### DNS Resolution
 
 ```bash
 nslookup google.com
 ```
 
-✅ PASSED
-
 ---
 
-# ⚠️ Troubleshooting
+## ⚠️ Troubleshooting
 
 ## Issue 1: No Internet Access
 
@@ -375,31 +308,7 @@ sudo nmcli connection up "Wired connection 1"
 
 ---
 
-## Issue 2: VirtualBox VM Won't Start
-
-### Cause
-
-Hardware virtualization disabled.
-
-### Solution
-
-Enable:
-
-```text
-Intel VT-x
-```
-
-or
-
-```text
-AMD-V
-```
-
-from BIOS/UEFI settings.
-
----
-
-# 🎯 Skills Learned
+## 🎯 Skills Learned
 
 - VirtualBox Administration
 - Virtual Networking
@@ -413,7 +322,7 @@ from BIOS/UEFI settings.
 
 ---
 
-# 🔒 Ethical Use Notice
+## 🔒 Ethical Use Notice
 
 This cybersecurity laboratory was developed exclusively for educational purposes, authorized security training, and ethical hacking practice. All testing should be performed only on systems that you own or have explicit written authorization to assess.
 
@@ -421,7 +330,7 @@ Unauthorized testing against public or private systems is illegal and unethical.
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Abdul BASIR-SERAT**
 
@@ -431,7 +340,7 @@ Batch B083
 
 ---
 
-# 🙏 Acknowledgements
+## 🙏 Acknowledgements
 
 Special thanks to:
 
