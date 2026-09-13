@@ -51,9 +51,6 @@ The isolated environment helps to:
 
 ---
 
----
-
-
 ## 🌐 Network Architecture
 
 ```text
