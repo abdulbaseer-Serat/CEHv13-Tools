@@ -4,7 +4,7 @@
 
 ---
 
-# 📖 Project Overview
+## 📖 Project Overview
 
 This project documents the setup of a cybersecurity testing lab environment using Oracle VirtualBox and Kali Linux as part of the Networkwalks Cybersecurity Program (Batch B083).
 
@@ -42,7 +42,7 @@ with Kali Linux configured as the primary security workstation.
 ✅ Build Foundation for Future Cybersecurity Labs
 
 ---
-# ⚙️ Lab Configuration
+## ⚙️ Lab Configuration
 | Component | Configuration |
 |------------|---------------|
 | 🖥️ Host OS | Windows 11 |
@@ -62,7 +62,7 @@ with Kali Linux configured as the primary security workstation.
 ---
 
 
-# 🌐 Network Architecture
+## 🌐 Network Architecture
 
 ```text
                     INTERNET
@@ -82,7 +82,7 @@ with Kali Linux configured as the primary security workstation.
 
 ---
 
-# 📁 Repository Structure
+## 📁 Repository Structure
 
 ```text
 NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
@@ -104,9 +104,9 @@ NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
 
 ---
 
-# 📸 Lab Screenshots
+## 📸 Lab Screenshots
 
-## 1. VirtualBox NAT Network Configuration
+### 1. VirtualBox NAT Network Configuration
 
 screenshots/nat-network.png
 
@@ -122,7 +122,7 @@ This allows virtual machines to communicate with each other while maintaining in
 
 ---
 
-## 2. Kali Linux Network Adapter
+### 2. Kali Linux Network Adapter
 
 screenshots/kali-network-adapter.png
 
@@ -132,7 +132,7 @@ Configured Adapter 1 to attach directly to the custom NAT Network.
 
 ---
 
-## 3. Kali Linux Desktop
+### 3. Kali Linux Desktop
 
 screenshots/kali-desktop.png
 
