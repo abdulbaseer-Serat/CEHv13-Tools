@@ -1,4 +1,5 @@
 # 🔐 Cybersecurity Lab Environment Setup
+
 ![Cybersecurity](https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000)
 ![VirtualBox](https://img.shields.io/badge/Ver-VirtualBox%207.2-0070C0?style=flat-square&labelColor=000000)
 ![Kali Linux](https://img.shields.io/badge/Kali%20Linux-v2026.2-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white)
@@ -6,6 +7,7 @@
 ![Network](https://img.shields.io/badge/Network-10.0.0.0%2F24-238F89?style=flat-square&labelColor=000000)
 ![Penetration Testing](https://img.shields.io/badge/Penetration%20Testing-C000000?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white)
 ![Virtualization](https://img.shields.io/badge/Skill-Virtualization-404040?style=flat-square&labelColor=C00000)
+
 > A secure and isolated cybersecurity laboratory built using Oracle VirtualBox and Kali Linux for ethical hacking, network analysis, penetration testing, and cybersecurity training.
 
 ---
@@ -25,9 +27,22 @@ The lab uses a custom VirtualBox NAT Network configured with the subnet:
 with Kali Linux configured as the primary security workstation.
 
 ---
+## 🎯 Objectives
 
+The main objectives of this project are:
+
+- Install and configure Oracle VirtualBox.
+- Install and configure Kali Linux.
+- Create a private NAT Network for the cybersecurity lab.
+- Configure Kali Linux with a static IP address.
+- Configure the correct gateway and DNS settings.
+- Verify network connectivity.
+- Verify DNS resolution and security tools.
+- Create a clean snapshot of the configured Kali Linux machine.
+- Document the complete lab setup process.
+- Prepare the environment for future cybersecurity projects.
 # 🖥️ Lab Specifications
-
+---
 ## Host Machine
 
 | Component | Details |
